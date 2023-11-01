@@ -159,6 +159,7 @@ img{
 }
 .header-logo a>img{
   height: 54px;
+  width: auto;
 }
 .loto-text{
   height: 27px !important;
