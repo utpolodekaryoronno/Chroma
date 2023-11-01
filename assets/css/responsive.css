@@ -1,0 +1,294 @@
+@media all and (max-width: 1024px){
+	.heading1 {
+		font-size: 40px;
+		line-height: 60px;
+	}
+	.banner-content {
+		gap: 50px 60px;
+	}
+	.Service-content {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.Accessability-content {
+		gap: 50px 90px;
+	}
+	.circle-main {
+		width: 400px;
+		min-height: 400px;
+	}
+	p.left {
+		top: 86px;
+		right: 21px;
+	}
+	p.center {
+		bottom: 122px;
+		right: 6%;
+	}
+	p.right {
+		top: 174px;
+		left: 35px;
+	}
+}
+@media all and (max-width: 991px){
+	.container{
+		padding: 0px 20px;
+	}
+	.heading2{
+		font-size: 35px;
+		line-height: 45px;
+	  }
+	.header-nav nav ul {
+		gap: 40px;
+		align-items: flex-start;
+	}
+
+	.Service-content {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.Breakdown-content {
+		flex-direction: column;
+	}
+	.circle-main {
+		margin: 0px auto 30px;
+	}
+	.Community-area{
+		background-image: none;
+		
+	}
+}
+@media all and (min-width: 768px){
+	.header-menu{
+		display: flex !important;
+	}
+}
+@media all and (max-width: 767px){
+	/* Mobile menu ----------------------------*/
+	.mobile-menu {
+		display: block;
+	}
+	.header-nav nav{
+		position: absolute;
+		width: calc(100% + 40px);
+		top: 0;
+		left: -20px;
+		background: rgba(123, 12, 239, 1);
+		z-index: 1;
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+		padding: 70px 0px 12px 0px;
+		box-sizing: border-box;
+		text-align: left;
+		display: none;
+	}
+	.header-nav nav ul{
+		flex-direction: column;	
+		gap: 0px;
+	}
+	.header-nav nav ul li{
+		padding: 16px 0px;
+		width: 100%;
+		border-bottom: 1px solid #ffffff18;
+	}
+	.header-nav nav ul li:last-child{
+		border-bottom: 0px solid #ffffff75;
+	}
+	.header-nav nav ul li a{
+		padding: 0px 20px;
+	}
+
+
+
+
+
+
+	.banner-content {
+		padding: 41px 0px 50px 0px;
+		flex-direction: column;
+	}
+	.banner-right-content{
+		order: -1;
+	}
+
+	.Accessability-content {
+		flex-direction: column;
+	}
+	.Accessability-right-content{
+		order: -1;
+	}
+	.Accessability-right-content .text_16{
+		display: none;
+	}
+	.Accessability-left-content .text_16{
+		display: block;
+		padding-top: 25px;
+	}
+	.Accessability-content{
+		align-items: flex-start;
+	}
+	.Accessability-left-content {
+		padding-left: 0px;
+	}
+	.Breakdown-right-content{
+		order: -1;
+	}
+	.mobile-block{
+		display: block;
+	}
+	.mobile-none{
+		display: none;
+	}
+	.Technology-content {
+		gap: 23px 10px;
+	}
+	.footer-content {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+}
+
+@media all and (max-width:575px){
+	.heading1 {
+		font-size: 40px;
+		line-height: 48px;
+	}
+	.heading2 {
+		font-size: 32px;
+		line-height: 41px;
+	}
+	.heading3 {
+		font-size: 22px;
+		line-height: 28.6px;
+	}
+	.text_18{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.text_16{
+		font-size: 14px;
+		line-height: 21px;
+	  }
+	.header-logo a img {
+		max-width: 200px;
+		height: 40px;
+	}
+	.banner-content {
+		gap: 25px 0px;
+	}
+	.single-card-service {
+		padding: 20px 20px;
+	}
+	.single-Breakdown {
+		padding: 20px;
+	}
+	.Service-area {
+		padding-bottom: 50px;
+	}
+	.Service-content {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.Live-statistics-content {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.Community-content {
+		flex-direction: column;
+	}
+	.Accessability-content {
+		gap: 25px 0px;
+	}
+	.Accessability-area {
+		padding-bottom: 50px;
+	}
+	.section-title {
+		padding-bottom: 25px;
+	}
+	.circle-main {
+		margin: 0px auto 0px;
+	}
+	.Breakdown-content {
+		gap: 25px 0px;
+	}
+	.Breakdown-bottom-content {
+		padding-top: 25px;
+	}
+	.Breakdown-area {
+		padding-bottom: 50px;
+	}
+	.Technology-area .section-title {
+		padding-bottom: 30px;
+	}
+	.Technology-area {
+		padding-bottom: 50px;
+	}
+	.single-FAQ {
+		padding: 20px;
+	}
+	.FAQ-area{
+		padding-bottom: 50px;
+	}
+	.Community-main-content {
+		padding: 50px 15px;
+	}
+	.Community-area {
+		padding-bottom: 50px;
+	}
+	.footer-left-content img {
+		height: 51px;
+		margin-bottom: 31px;
+	}
+	.footer-area {
+		padding-top: 30px;
+	}
+	.footer-content {
+		padding-bottom: 25px;
+	}
+	.copy-right-area {
+		padding: 20px 0px;
+	}
+	.Live-statistics-content .text_16 {
+		padding-top: 6px;
+	}
+}
+
+
+@media all and (max-width:450px){
+	.header-logo a> img {
+		max-width: 190px;
+		height: 31px;
+	}
+	.loto-text{
+		height: 20px !important;
+	}
+	.circle-main {
+		width: 335px;
+		min-height: 335px;
+	}
+	.circle-main p span {
+		max-width: 110px;
+		font-size: 11px;
+	}
+	.circle-main p {
+		font-size: 12px;
+	}
+	p.center {
+		bottom: 100px;
+	}
+	p.right {
+		top: 153px;
+	}
+	.Technology-content {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.btn {
+		padding: 12px 10px;
+	}
+	.footer-right-content {
+		flex-direction: column;
+	}
+
+}
+
+
+@media all and (max-width:375px){
+
+}

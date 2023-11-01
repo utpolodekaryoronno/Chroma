@@ -1,0 +1,699 @@
+/* 
+  Template Name: Chroma Finance
+  Template URI: https://chromaFinance.com/
+  Author Name: 
+  Author URI: https://
+  Version: 1.0.0
+  Description: This is Figma to HTML
+  Tags: Chroma, Finance, Css, Bootstrap
+*/
+
+
+/* Font Family  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@400;500;700&display=swap');
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+/* Default Css */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  overflow-x: hidden;
+}
+body{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  background: #07000F;
+  color: #F5FFFF;
+  overflow-x: hidden;
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+}
+.main-area{
+  margin-top: -50px;
+  background: url(../images/main-banner.webp) no-repeat scroll center top / cover;
+}
+ul,ol{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+a:hover{
+  color: inherit;
+}
+img{
+  width: 100%;
+}
+.heading1{
+  color: #FFF;
+  font-family: Ubuntu;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 67px;
+}
+.heading2{
+  color: #FFF;
+  font-family: Ubuntu;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+}
+.heading3{
+  color: #F5FFFF;
+  font-family: Ubuntu;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 31.2px;
+}
+.heading4{
+  color: #FFF;
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.text_20{
+  color: #FFF;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height:  30px;
+}
+.text_18{
+  color: #FFF;
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+.text_16{
+  color: #FFF;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  opacity: 0.7;
+}
+.text_14{
+  color: #FFF;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 21px;
+  opacity: 0.7;
+}
+.section-title{
+  padding-bottom: 50px;
+  text-align: center;
+  max-width: 550px;
+  width: 100%;
+  margin: auto;
+}
+
+.container{
+  max-width: 1149px;
+  width: 100%;
+  margin: auto;
+}
+/* ===================================================================
+                            Header Area CSS Start
+====================================================================*/
+.header-area{
+  background: #070010;
+}
+.header-main{
+  position: relative;
+  padding: 32px 0px;
+}
+.header-menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-logo a{
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  max-width: 335px;
+  height: 54px;
+}
+.header-logo a>img{
+  height: 54px;
+}
+.loto-text{
+  height: 27px !important;
+}
+.header-nav nav ul{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.header-nav nav ul li a{
+  color: #FFF;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  line-height:  20px;
+  opacity: 0.7;
+}
+
+
+
+/*Start Mobile Menu icon*/
+.mobile-menu {
+	position: absolute;
+	top: 50%;
+  transform: translateY(-50%);
+	right: 0px;
+  display: none;
+  z-index: 999999999;
+}
+#nav-icon {
+  width: 28px;
+  height: 23px;
+  position: relative;
+  margin: 0px;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+#nav-icon span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #BA6FFF;
+  /* background: #d7d3da70; */
+  border-radius: 3px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+#nav-icon span:nth-child(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+#nav-icon span:nth-child(2) {
+  top: 8px;
+  transform-origin: left center;
+}
+#nav-icon span:nth-child(3) {
+  top: 16px;
+  transform-origin: left center;
+}
+#nav-icon.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: -2px;
+  left: 2px;
+  background: #d7d3da70;
+}
+#nav-icon.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+#nav-icon.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 18px;
+  left: 2px;
+  background: #d7d3da70;
+}
+/*End Mobile Menu icon*/
+
+
+/* ===================================================================
+                            Banner Area CSS Start
+====================================================================*/
+.banner-content{
+  display: flex;
+  gap: 50px 105px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 140px 0px 120px 0px;
+}
+.banner-left-content{
+  flex-basis: 54%;
+}
+.banner-right-content{
+  flex-basis: 46%;
+}
+.banner-left-content .heading1{
+  padding-bottom: 12px;
+}
+
+/* ===================================================================
+                            Service Area CSS Start
+====================================================================*/
+.Service-area{
+  padding-bottom: 73px;
+}
+.Service-content{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 15px 24px;
+}
+.single-card-service{
+  padding: 30px 25px;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: linear-gradient(90deg, #1D0D2B 0.53%, #0A0112 101.25%);
+  box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.05);
+  transition: 0.5s;
+}
+.single-card-service:hover .text_14{
+  opacity: .9;
+}
+.single-card-main{
+  width: 100%;
+  height: 100%;
+  padding: 1px;
+  border-radius: 15px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
+}
+.single-card-service:hover{
+  box-shadow: rgba(252, 248, 248, 0.199) 0px 3px 8px;
+}
+.service-icon{
+  height: 63px;
+  display: flex;
+  align-items: center;
+}
+.single-card-service .service-icon img{
+  height: 100%;
+  width: auto;
+}
+.first-ser-img{
+  max-width: 80px;
+  height: 33px !important;
+}
+.single-card-service .heading4{
+  padding-top: 15px;
+  padding-bottom: 9px;
+}
+
+/* ===================================================================
+                            Accessability Area CSS Start
+====================================================================*/
+.Accessability-area{
+  padding-bottom: 88px;
+}
+.Accessability-content{
+  display: flex;
+  align-items: center;
+  gap: 50px 127px;
+  justify-content: space-between;
+}
+.Accessability-left-content{
+  flex-basis: 46%;
+  padding-left: 32px;
+}
+.Accessability-right-content{
+  flex-basis: 54%;
+}
+.Accessability-right-content .text_16{
+  max-width: 467px;
+  padding-top: 15px;
+}
+.Accessability-left-content .text_16{
+  display: none;
+}
+
+/* ===================================================================
+                            Breakdown Area CSS Start
+====================================================================*/
+.Breakdown-area{
+  padding-bottom: 120px;
+}
+.Breakdown-content{
+  display: flex;
+  gap: 40px 63px;
+}
+.Breakdown-left-content{
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.Breakdown-right-content{
+  flex-basis: 50%;
+}
+.single-Breakdown-min{
+  padding: 1px;
+  border-radius: 15px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
+}
+.single-Breakdown{
+  padding: 25px;
+  border-radius: 15px;
+  background: linear-gradient(90deg, #1D0D2B 0.53%, #0A0112 101.25%);
+  box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(7.5px);
+  transition: 0.4s;
+}
+.single-Breakdown:hover{
+  box-shadow: rgba(252, 248, 248, 0.199) 0px 3px 8px;
+}
+.single-Breakdown:hover .text_16{
+  opacity: 0.9;
+}
+.single-Breakdown .text_20{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-top: 3px;
+  padding-bottom: 26px;
+}
+.single-Breakdown .text_20 span{
+  font-size: 28px;
+  background: linear-gradient(180deg, #7B0CEF 0%, #BA6FFF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Breakdown-bottom-content{
+  max-width: 550px;
+  width: 100%;
+  margin: auto;
+  padding-top: 30px;
+  text-align: center;
+}
+.Breakdown-bottom-content .text_18 span{
+  font-weight: 700;
+}
+.Live-statistics-content{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px 20px;
+
+}
+
+.single-Live-statistics{
+  /* max-width: 152px; */
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(7.5px);
+  background: #ffffff0e;
+  height: 100%;
+  transition: 0.6s;
+}
+.single-Live-statistics:hover{
+  box-shadow: rgba(252, 248, 248, 0.199) 0px 3px 8px;
+}
+.single-Live-statistics:hover .text_14{
+  opacity: 0.9;
+}
+.Live-statistics-content .text_16{
+  font-weight: 700;
+  opacity: 1;
+  padding-top: 8px;
+}
+
+.mobile-block{
+  display: none;
+}
+
+
+/* Circle design  */
+.circle-main {
+  background: radial-gradient(
+  circle closest-side,
+  transparent 66%,
+  transparent 0
+),
+conic-gradient(#A254F5 96deg, #BA6FFF 97deg 129deg, #7B0CEF 130deg);
+  position: relative;
+  width: 472px;
+  min-height: 472px;
+  margin: 0;
+  border-radius: 50%;
+  transform: rotate(10deg);
+  margin-bottom: 60px;
+}
+.circle-main p{
+  font-size: 18px;
+  font-weight: 700;
+}
+.circle-main p span{
+  max-width: 150px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+}
+p.right {
+  position: absolute;
+  top: 215px;
+  left: 50px;
+  transform: rotate(-10deg);
+}
+p.left {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  transform: rotate(-10deg);
+}
+p.center {
+  position: absolute;
+  bottom: 149px;
+  right: 8%;
+  transform: rotate(-10deg);
+}
+/* ===================================================================
+                            Technology Area CSS Start
+====================================================================*/
+.Technology-area {
+  padding-bottom: 120px;
+}
+.Technology-area .section-title{
+  padding-bottom: 40px;
+}
+.Technology-content{
+  display: flex;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  gap: 23px 112px;
+}
+.single-technology{
+  height: 55px;
+}
+.single-technology .three-child {
+  max-height: 50px;
+  top: 50%;
+  height: 100%;
+  transform: translateY(-50%);
+  position: relative;
+}
+.single-technology img{
+  height: 100%;
+}
+
+
+
+
+
+/* ===================================================================
+                            FAQ Area CSS Start
+====================================================================*/
+.FAQ-area{
+  padding-bottom: 120px;
+}
+.FAQ-content{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.single-FAQ{
+  padding: 30px;
+  border-radius: 15px;
+  /* background: linear-gradient(90deg, #1D0D2B 0.53%, rgba(10, 1, 18, 0.00) 101.25%); */
+  background: linear-gradient(90deg, #1D0D2B 0.53%, #0A0112 101.25%);
+  box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.05);
+}
+.single-FAQ-main{
+  padding: 1px;
+  border-radius: 15px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  transition: 0.4s;
+}
+.single-FAQ-main:hover{
+  box-shadow: rgba(252, 248, 248, 0.199) 0px 3px 8px;
+}
+.single-FAQ-main:hover .text_16{
+  opacity: 0.9;
+}
+.single-FAQ .heading3{
+  padding-bottom: 10px;
+}
+.single-FAQ .text_16{
+  max-width: 934px;
+}
+
+/* ===================================================================
+                            Community Area CSS Start
+====================================================================*/
+.Community-area{
+  background-image: linear-gradient(to top, #070010 , #07000E);
+  padding-bottom: 120px;
+}
+.Community-main-content{
+  background: url(../images/community-bg.png) no-repeat scroll center center / cover;
+  padding: 70px 15px;
+  border-radius: 15px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.089);
+}
+.Community-area .section-title{
+  padding-bottom: 30px;
+}
+.Community-area .section-title .heading2{
+  font-size: 30px;
+}
+.Community-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px 30px;
+}
+.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 17px 10px;
+  max-width: 266px;
+  gap: 12px;
+  width: 100%;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 20.8px;
+  border-radius: 30px;
+  background: #5865F2;
+  transition: 0.3s;
+}
+.blue-btn{
+  background: #4599DF;
+}
+.btn:hover{
+  color: #FFF;
+  box-shadow: rgba(183, 183, 194, 0.322) 0px 7px 29px 0px;
+}
+.btn img{
+  height: 18px;
+  width: auto;
+}
+
+
+/* ===================================================================
+                            Footer Area CSS Start
+====================================================================*/
+.footer-area{
+  background: #000;
+  padding-top: 50px;
+}
+.footer-content{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px 50px;
+  padding-bottom: 60px;
+}
+.footer-left-content img{
+  height: 70px;
+  width: auto;
+  margin-bottom: 18px;
+}
+.quick-links ul li{
+  padding-top: 12px;
+}
+.quick-links ul li a{
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 18px;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.quick-links ul li a:hover{
+  opacity: 1;
+}
+.footer-right-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 25px;
+}
+.social-links{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.single-social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  background: #191919;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.single-social:hover{
+  background: #b1abab6c;
+}
+.single-social img{
+  height: 15px;
+  width: auto;
+}
+
+.copy-right-area{
+  padding: 25px 0px;
+  border-top: 1px solid #b1abab2c;
+}
+.copy-right-area .text_14{
+  text-align: center;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
